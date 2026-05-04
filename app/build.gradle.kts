@@ -9,12 +9,12 @@ android {
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.zivpn.app"
-        minSdk = 21
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.0"
-    }
+    applicationId = "com.zivpn.app"
+    minSdk = 21
+    targetSdk = 35
+    versionCode = 1
+    versionName = "1.0.0"
+}
 
     buildTypes {
         release {
