@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+build/
+
+# Android Studio
+.idea/
+*.iml
+*.apk
+*.ap_
+*.dex
+*.class
+
+# Local properties
+local.properties
+
+# IDE
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VPN credentials (never commit!)
+app/src/main/assets/credentials.json
