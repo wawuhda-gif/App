@@ -19,17 +19,13 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+          cache: gradle
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Install Gradle & Generate Wrapper
-        run: |
-          curl -s "https://get.sdkman.io" | bash
-          source "$HOME/.sdkman/bin/sdkman-init.sh"
-          sdk install gradle 8.2
-          gradle wrapper --gradle-version=8.2
-          chmod +x gradlew
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
 
       - name: Build APK
         run: ./gradlew assembleDebug --no-daemon
